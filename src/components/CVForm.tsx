@@ -1,14 +1,15 @@
 import React, { useState, FormEvent } from "react";
 
 type FormItem = {
-  item: any;
-  setItem: React.Dispatch<React.SetStateAction<any>>;
-  inputType: string;
+  item: any,
+  setItem: React.Dispatch<React.SetStateAction<any>>,
+  inputType: string
 };
 
 type Props = {
-  name: string;
-  items: FormItem[];
+  name: string,
+  items: FormItem[],
+  setSubmitted: React.Dispatch<React.SetStateAction<boolean>>
 };
 
 export default function Form(props: Props) {
@@ -25,6 +26,7 @@ export default function Form(props: Props) {
     props.items.forEach((element, index) => {
       element.setItem(formData[index]);
     });
+    props.setSubmitted(true);
   };
 
   console.log(formData);
