@@ -17,7 +17,7 @@ export default function Form(props: Props) {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setFormData({
       ...formData,
-      [event.target.name]: event.target.value.trim(),
+      [event.currentTarget.name]: event.currentTarget.value.trim(),
     });
 
   const handleSubmit = (event: FormEvent) => {
