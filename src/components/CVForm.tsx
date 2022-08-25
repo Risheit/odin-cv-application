@@ -29,19 +29,22 @@ export default function Form(props: Props) {
 
   console.log(formData);
   return (
-    <form onSubmit={handleSubmit}>
-      {props.items.map((item: FormItem) => (
-        <span className="FormItem">
-          <label htmlFor={item.item}>{item.item}</label>
-          <input
-            type={item.inputType}
-            name={item.item}
-            id={item.item}
-            defaultValue={item.item}
-            onChange={handleChange}
-          />
-        </span>
-      ))}
-    </form>
+    <div className="CVForm">
+      <h1>{props.name}</h1>
+      <form onSubmit={handleSubmit}>
+        {props.items.map((item: FormItem) => (
+          <span className="FormItem">
+            <label htmlFor={item.item}>{item.item}</label>
+            <input
+              type={item.inputType}
+              name={item.item}
+              id={item.item}
+              defaultValue={item.item}
+              onChange={handleChange}
+            />
+          </span>
+        ))}
+      </form>
+    </div>
   );
 }
