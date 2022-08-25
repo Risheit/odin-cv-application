@@ -1,0 +1,20 @@
+.Component .header {
+    display: flex;
+    align-items: center;
+}
+
+.Component h1 {
+    display: inline-block;
+    flex: 10 1 0;
+}
+
+.Component button {
+    float: right;
+    flex: 0 1 0;
+    height: fit-content;
+}
+
+.Component p {
+    display: inline-block;
+    margin: 1rem 10rem 1rem 0;
+}
