@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from "react";
+import "../styles/CVForm.css";
 
 type FormItem = {
   item: any,
