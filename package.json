@@ -46,6 +46,7 @@
   },
   "homepage": "https://risheit.github.io/cv-application",
   "devDependencies": {
+    "@types/uniqid": "^5.3.2",
     "gh-pages": "^4.0.0"
   }
 }
