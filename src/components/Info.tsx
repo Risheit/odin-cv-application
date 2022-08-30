@@ -14,49 +14,49 @@ export default function Info() {
 
   return (
     <section className='Component' id='Info'>
-      <div className='header'>
+      <div className='Header'>
         <h1>Info</h1>
-        <button className='editInfo' onClick={handleClick}>
+        <button className='EditInfo' onClick={handleClick}>
           Edit
         </button>
       </div>
       <form onSubmit={handleSubmit}>
         <div>
           <p>
-            <label htmlFor='name'>Name</label>
+            <label htmlFor='Name'>Name</label>
             <input
               type='text'
-              name='name'
-              id='name'
+              name='Name'
+              id='Name'
               disabled={!isEditable}
             />
           </p>
           <p>
-            <label htmlFor='phone'>Phone</label>
+            <label htmlFor='Phone'>Phone</label>
             <input
               type='number'
-              name='phone'
-              id='phone'
+              name='Phone'
+              id='Phone'
               disabled={!isEditable}
             />
           </p>
         </div>
         <div>
           <p>
-            <label htmlFor='address'>Address</label>
+            <label htmlFor='Address'>Address</label>
             <input
               type='text'
-              name='address'
-              id='address'
+              name='Address'
+              id='Address'
               disabled={!isEditable}
             />
           </p>
           <p>
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='Email'>Email</label>
             <input
               type='email'
-              name='email'
-              id='email'
+              name='Email'
+              id='Email'
               disabled={!isEditable}
             />
           </p>
