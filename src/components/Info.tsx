@@ -2,13 +2,7 @@ import React, { FormEvent, SyntheticEvent, useState } from "react";
 import "../styles/Components.css";
 // import parsePhoneNumber, { PhoneNumber } from "libphonenumber-js";
 
-import CVForm from "./CVForm";
-
 export default function Info() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
-  const [email, setEmail] = useState("");
   const [isEditable, setIsEditable] = useState(false);
 
   const handleClick = (e: SyntheticEvent) => setIsEditable(!isEditable);
@@ -30,11 +24,21 @@ export default function Info() {
         <div>
           <p>
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" disabled={!isEditable} />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              disabled={!isEditable}
+            />
           </p>
           <p>
             <label htmlFor="phone">Phone</label>
-            <input type="number" name="phone" id="phone" disabled={!isEditable} />
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              disabled={!isEditable}
+            />
           </p>
         </div>
         <div>
